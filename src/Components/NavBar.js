@@ -64,7 +64,8 @@ function NavBar() {
             placeholder="Search for products, brands and more"
           />
         </div>
-        <div className="bar-menus" onClick={openSideBar}>
+        <div className="bar-menus" 
+         onClick={openSideBar}>
           <i class="fa-solid fa-bars"></i>
         </div>
         <div className="nav-menus">
