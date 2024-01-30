@@ -27,13 +27,21 @@
     width: 29%;
     margin-left: 8%;
 }
-.nav-items ul {
+.nav-items .nav-items-links {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
+.nav-items .nav-items-links .nav-item{
+    list-style: none;
+}
 
-.nav-items ul a {
+.nav-items .nav-items-links .nav-item .link-men,
+.nav-items .nav-items-links .link-women,
+.nav-items .nav-items-links .link-kids,
+.nav-items .nav-items-links .link-beauty,
+.nav-items .nav-items-links .link-home,
+.nav-items .nav-items-links .link-studio {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -108,6 +116,165 @@
 .nav-menus .bag .fa-bag-shopping {
     margin-left: 40%;
     font-size: 21px;
+}
+
+.nav-items .nav-items-links .nav-item   .men-wear,
+.nav-items .nav-items-links .link-women .women-wear,
+.nav-items .nav-items-links .link-kids .kids-wear,
+.nav-items .nav-items-links .link-home .home-wear,
+.nav-items .nav-items-links .link-beauty .beauty-wear,
+.nav-items .nav-items-links .link-studio .studio-wear {
+    position: absolute;
+    display: none;
+    width: 200%;
+    height: 400px;
+    top: 21px;
+    background-color: white;
+}
+.nav-items .nav-items-links .nav-item   .men-wear .men-wear-items-odd,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-odd,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-odd,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-odd,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-odd,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-odd {
+    display: block;
+    width: 200px;
+    height: 370px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 32px auto;
+    padding-left: 29px;
+}
+.nav-items .nav-items-links .nav-item   .men-wear .men-wear-items-even,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-even,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-even,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-even,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-even,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-even {
+    display: block;
+    width: 200px;
+    height: 370px;
+    background-color: #f4f4f7f2;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 32px auto;
+    padding-left: 29px;
+}
+
+.nav-items .nav-items-links .nav-item .men-wear .men-wear-items-odd .men-wear-items-name,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-odd .women-wear-items-name,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-odd .kids-wear-items-name,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-odd .home-wear-items-name,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-odd .beauty-wear-items-name,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-odd .studio-wear-items-name {
+    display: block;
+    color: #ee5f73;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12px 0 2px;
+    white-space: nowrap;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 25px;
+    font-weight: 700;
+}
+.nav-items .nav-items-links .nav-item   .men-wear .men-wear-items-odd .men-wear-items-link,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-odd .women-wear-items-link,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-odd .kids-wear-items-link,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-odd .home-wear-items-link,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-odd .beauty-wear-items-link,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-odd .studio-wear-items-link {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 40px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.nav-items .nav-items-links .nav-item   .men-wear .men-wear-items-odd .men-wear-items-link:hover,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-odd .women-wear-items-link:hover,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-odd .kids-wear-items-link:hover,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-odd .home-wear-items-link:hover,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-odd .beauty-wear-items-link:hover,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-odd .studio-wear-items-link:hover {
+    font-weight: 700;
+}
+.nav-items .nav-items-links .nav-item    .men-wear .men-wear-items-even .men-wear-items-link:hover,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-even .women-wear-items-link:hover,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-even .kids-wear-items-link:hover,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-even .home-wear-items-link:hover,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-even .beauty-wear-items-link:hover,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-even .studio-wear-items-link:hover {
+    font-weight: 700;
+}
+
+.nav-items .nav-items-links .nav-item  .men-wear .men-wear-items-even .men-wear-items-name,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-even .women-wear-items-name,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-even .kids-wear-items-name,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-even .home-wear-items-name,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-even .beauty-wear-items-name,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-even .studio-wear-items-name {
+    display: block;
+    color: #ee5f73;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12px 0 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    overflow: hidden;
+    line-height: 25px;
+    font-weight: 700;
+}
+.nav-items .nav-items-links .nav-item  .men-wear .men-wear-items-even .men-wear-items-link,
+.nav-items .nav-items-links .link-women .women-wear .women-wear-items-even .women-wear-items-link,
+.nav-items .nav-items-links .link-kids .kids-wear .kids-wear-items-even .kids-wear-items-link,
+.nav-items .nav-items-links .link-home .home-wear .home-wear-items-even .home-wear-items-link,
+.nav-items .nav-items-links .link-beauty .beauty-wear .beauty-wear-items-even .beauty-wear-items-link,
+.nav-items .nav-items-links .link-studio .studio-wear .studio-wear-items-even .studio-wear-items-link {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 40px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* .nav-items .nav-items-links .link-men:hover + .nav-items .nav-items-links .link-men .men-wear {
+    display: flex;
+    color: #ee5f73;
+    Additional styling for the .men-wear when .link-men is hovered 
+  } */
+ 
+ .nav-item:hover .link-men + .men-wear {
+    display: flex;
+    /* color: #ee5f73; */
+    /* Additional styling for the .men-wear when .link-men is hovered */
+}
+.nav-items .nav-items-links .link-women:hover  .women-wear {
+    display: flex;
+    /* color: #ee5f73; */
+    /* Additional styling for the .men-wear when .link-men is hovered */
+}
+.nav-items .nav-items-links .link-kids:hover .kids-wear {
+    display: flex;
+    /* color: #ee5f73; */
+    /* Additional styling for the .men-wear when .link-men is hovered */
+}
+.nav-items .nav-items-links .link-home:hover .home-wear {
+    display: flex;
+    /* color: #ee5f73; */
+    /* Additional styling for the .men-wear when .link-men is hovered */
+}
+.nav-items .nav-items-links .link-studio:hover .studio-wear {
+    display: flex;
+    /* color: #ee5f73; */
+    /* Additional styling for the .men-wear when .link-men is hovered */
+}
+.nav-items .nav-items-links .link-beauty:hover .beauty-wear {
+    display: flex;
+    /* color: #ee5f73; */
+    /* Additional styling for the .men-wear when .link-men is hovered */
 }
 
 @media only screen and (max-width: 480px) {
@@ -325,5 +492,3 @@
         display: none;
     }
 }
-
-
