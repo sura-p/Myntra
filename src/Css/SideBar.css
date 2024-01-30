@@ -1,0 +1,87 @@
+.side-container {
+    position: relative;
+    width: 33%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    left: 67%;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.side-container .logo {
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+}
+
+.side-container .logo  .fa-xmark{
+    font-size: 17px;
+}
+
+.side-container .logo img {
+    height: 36px;
+    width: 47px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.side-items ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.side-items ul a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.side-search-bar {
+    display: none;
+}
+
+.side-menus {
+    position: relative;
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 69px;
+}
+.side-menus li{
+    margin-top: 18px;
+    margin-left: 2px;
+}
+
+.side-menus .profile,
+.side-menus .wishlist,
+.side-menus .bag {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.side-menus .profile span ,
+.side-menus .wishlist span,
+.side-menus .bag span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.side-menus .profile,
+.side-menus .wishlist,
+.side-menus .bag:hover {
+    cursor: pointer;
+}
+.side-menus .profile .fa-user,
+.side-menus .wishlist .fa-heart,
+.side-menus .bag .fa-bag-shopping {
+    margin-left: 40%;
+    font-size: 17px;
+}
